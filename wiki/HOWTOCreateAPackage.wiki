@@ -1,8 +1,6 @@
 #summary Instructions on how to create a SPM package.
 #labels Featured
 
-= THIS PAGE IS CURRENTLY UNDER CONSTRUCTION AND IS THEREFORE INCOMPLETE!! =
-
 = How to Create a Package using the Simple Package Manager =
 
 First you need to install the Simple Package Manager on your system before you start. If you need this please read the HOWTOInstall wiki page.
@@ -15,15 +13,49 @@ After you install spm, you need to create three scripts and one regular file. Th
  * `uninstall` - this script uninstalls the software from the system.
 Note that the script can be called any thing and don't have to actually be a script (e.i. they can be an executable binary), but they will be referred to by the names given above.
 
-=== build Script ===
+=== Build Script Example ===
 
-=== install Script ===
+{{{
+#!/bin/bash
 
-=== uninstall Script ===
+./configure
+make
+
+# EOF
+
+}}}
+
+Note that this is the first script executed when the spm-install command is called. As such dependencies should be checked by this script.
+
+=== Install Script Example ===
+
+{{{
+#!/bin/bash
+
+make install
+
+# EOF
+
+}}}
+
+=== Uninstall Script Example ===
+
+{{{
+#!/bin/bash
+
+files=<installed files>
+
+for file in $files; do
+    yes | rm $file
+done
+
+# EOF
+
+}}}
 
 == Step 2 - Create the license file ==
 
-
+The license file simply contains the terms and conditions for copying the software. This should be a plain text document. Have a look [http://en.wikipedia.org/wiki/List_of_FSF_approved_software_licenses here] for a list of some free / open source software licenses.
 
 == Step 3 - Create the package ==
 
