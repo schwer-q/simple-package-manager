@@ -1,0 +1,5 @@
+#summary Contents of the wiki.
+ * *HOWTO Articles*
+   * [HOWTOInstall Install SPM]
+   * [HOWTOCreateAPackage Create a package] 
+ * [http://code.google.com/p/spm-package-repository/wiki/PackageList List of Packages]
