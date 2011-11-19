@@ -16,3 +16,5 @@ alternativley you can use sudo if you have it configured correctly:
 {{{
 sudo make install
 }}}
+
+<g:plusone size="medium"></g:plusone>
