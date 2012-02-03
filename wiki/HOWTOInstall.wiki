@@ -3,7 +3,7 @@
 
 == How to Install ==
 
-First you will need to download and extract the current [http://simple-package-manager.googlecode.com/files/spm-0.1.1-alpha.tar.gz source] archive, or checkout the current source via subversion.
+First you will need to download and extract the current [http://simple-package-manager.googlecode.com/files/spm-0.1.1-rev2.tar.gz source] archive, or checkout the current source via subversion.
 
 In order to install this software you must have root privilege access. This might
 mean that you have to get an administrator to install it for you. The software 
